@@ -51,13 +51,10 @@ I have built the backend using express framework, and using the following middle
   - POST /api/meetings to create a new meeting and save it to the database.
   - DELETE /api/meetings to delete _all_ meetings from the database.
 
-For all `/api/minions` and `/api/ideas routes`, any POST or PUT requests will send their new/updated resources in the request body. POST request bodies will not have an `id` property, you will have to set it based on the next id in sequence.
-
-For `/api/meetings` POST route, no request body is necessary, as meetings are generated automatically by the server upon request. Use the provided `createMeeting` function exported from **db.js** to create a new meeting object.
 
 ### Working with the 'Database'
 
-The **server/db.js** file exports helper functions for working with the database arrays. The goal of this project is for you to focus on Express routes and not worry about how the database works under the hood. These functions always take at least one argument, and the first argument is always a string representing the name of the database model: `'minions'`, `'ideas'`, `'meetings'`, or `'work'`.
+The **server/db.js** file exports helper functions for working with the database arrays. These functions always take at least one argument, and the first argument is always a string representing the name of the database model: `'minions'`, `'ideas'`, `'meetings'`, or `'work'`.
 
 `getAllFromDatabase`:
 
