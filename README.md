@@ -21,7 +21,7 @@ Run `npm install` to install the dependencies of this project and build the fron
 
 The `npm run start` script will automatically restart your server whenever you make changes to the **server.js** file or **server/** folder. If you want to turn this off, simply start your server with the `node server.js` command. You can kill either process with the `Ctrl + C` command.
 
-Now simply open **index.html** in a web browser.
+Now simply open **index.html** in a web browser.(Currently only works for Chrome or Firefox)
 
 ## Implementation Details
 
